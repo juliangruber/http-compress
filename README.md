@@ -15,7 +15,7 @@ HTTP framework independent response compression.
 'use strict'
 
 const http = require('http')
-const compress = require('.')
+const compress = require('http-compress')
 
 const server = http.createServer((req, res) => {
   compress(req, res, 'oh hey!')
